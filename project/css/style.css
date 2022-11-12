@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar-height: 50px;
+}
+
+/* header start */
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    margin: 10px 20px;
+}
+/* #navbar{
+    position: sticky;
+} */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 7px 40px;
+    display: block;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+}
+
+/* header end */
+
+/* home section  */
+#home {
+    display: flex;
+    justify-content: center;
+    height: 579px;
+    align-items: center;
+    padding: 2px 200px;
+    flex-direction: column;
+}
+
+#home::before {
+    content: " ";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#home p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* services section  */
+
+#services {
+    display: flex;
+    margin: 34px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 6px 8px;
+    border-radius: 23px;
+    background: #efefef;
+}
+
+#services .box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+#services {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.h-primary {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.7rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 13px 23px;
+    border: 2px solid #fff;
+    background-color: burlywood;
+    border-radius: 1rem;
+    font-size: medium;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.login {
+    background: url('../image/p.jpg') no-repeat center center/cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.login-form h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+.login-form .login {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    margin: 10px;
+}
+
+.login-form .login .box-a {
+    margin: 3px 15px;
+    padding: 12px;
+    width: auto;
+}
+
+.login-form .login .box-a input {
+    height: 25px;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+.login-form .login .text textarea {
+    height: 166px;
+    width: 38%;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    border-radius: 22px;
+
+}
+
+.footer{
+    background-color: seagreen;
+    height: 34px;
+    color: #fff;
+    text-align: center;
+    animation: revert;
+}
